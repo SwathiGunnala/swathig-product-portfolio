@@ -527,7 +527,6 @@ export default function PortfolioPage() {
                           <p className="text-muted-foreground leading-relaxed">{c.deepDive.Learnings}</p>
                         </div>
                       </div>
-                      {/* </CHANGE> */}
                     </TabsContent>
                   </Tabs>
 
