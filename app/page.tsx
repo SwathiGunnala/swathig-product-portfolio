@@ -16,6 +16,7 @@ import {
   Instagram,
   ExternalLink,
   Linkedin,
+  Building2,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -417,11 +418,103 @@ export default function PortfolioPage() {
           </div>
         </div>
 
+        {/* FEATURED CASE STUDIES */}
+        <div id="featured-case-studies" className="pt-16">
+          <h2 className="text-2xl font-bold">Featured Case Studies</h2>
+          <p className="text-sm text-muted-foreground mb-6">
+            Deep-dive explorations of product challenges, research methodologies, and solutions.
+          </p>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* TJ Maxx/HomeGoods Case Study */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="text-xl mb-2">Reducing 40-Minute Checkout Wait Times</CardTitle>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Building2 className="h-4 w-4" />
+                      <span>TJ Maxx & HomeGoods</span>
+                    </div>
+                  </div>
+                  <Badge variant="secondary">Retail</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  A comprehensive UX research study analyzing checkout pain points during peak shopping seasons,
+                  identifying critical bottlenecks, and proposing data-driven solutions to improve customer experience.
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline" className="text-xs">
+                    UX Research
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    Customer Experience
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    Retail Operations
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    Wait Time Optimization
+                  </Badge>
+                </div>
+
+                <div className="pt-2 border-t">
+                  <h4 className="text-sm font-semibold mb-2">Key Highlights:</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Field research during peak holiday shopping periods</li>
+                    <li>• Multi-method approach: observations, interviews, surveys</li>
+                    <li>• Identified 5 critical pain points in checkout flow</li>
+                    <li>• Actionable recommendations for immediate improvement</li>
+                  </ul>
+                </div>
+
+                <a
+                  href="https://www.notion.so/Case-Study-Reducing-40-Minute-Checkout-Wait-Times-at-TJ-Maxx-HomeGoods-2a81cc4128fe80fe929ed7b03ba343c2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                >
+                  Read Full Case Study
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Placeholder for additional case studies */}
+            <Card className="hover:shadow-lg transition-shadow border-dashed">
+              <CardHeader>
+                <CardTitle className="text-xl mb-2">More Case Studies Coming Soon</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Additional in-depth case studies exploring product strategy, user research, and problem-solving
+                  methodologies across various domains.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline" className="text-xs">
+                    Product Strategy
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    User Research
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    Data Analysis
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         {/* CASE STUDIES */}
         <div id="case-studies" className="pt-16">
           <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-2xl font-bold">Case Studies</h2>
+              {/* CHANGE: Updated heading from "Case Studies" to "Work Experience" */}
+              <h2 className="text-2xl font-bold">Work Experience</h2>
               <p className="text-sm text-muted-foreground">
                 Filter by domain, search, then choose your depth (TL;DR vs Deep Dive).
               </p>
@@ -934,7 +1027,7 @@ export default function PortfolioPage() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center">
-                    <Instagram className="h-5 w-5 text-white" />
+                    <Instagram className="h-4 w-4 text-white" />
                   </div>
                   <Badge variant="secondary" className="text-xs">
                     Active
