@@ -1,30 +1,61 @@
-# Portfolio page code
+# Swathi Gunnala — Product portfolio (web)
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+This repository hosts the **source for my public product portfolio** site: projects, background, and how to reach me. The UI was initially scaffolded with **[v0.app](https://v0.app)** and deploys through **Vercel**; I own the product narrative, structure, and ongoing edits.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/swathi-gunnalas-projects/v0-swathi-product-portfolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/uExQjgoIarZ)
+**Author:** [Swathi Gunnala](https://github.com/SwathiGunnala) · Product manager · Dallas, TX · [LinkedIn](https://www.linkedin.com/in/swathi-gunnala)
 
-## Overview
+[![Deployed on Vercel](https://img.shields.io/badge/Live%20site-Vercel-black?style=for-the-badge&logo=vercel)](https://REPLACE_WITH_YOUR_PUBLIC_VERCEL_URL)
+[![Built with v0](https://img.shields.io/badge/Scaffolded%20with-v0.app-000?style=for-the-badge)](https://v0.app)
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+> **Replace the badge link** `REPLACE_WITH_YOUR_PUBLIC_VERCEL_URL` with your real deployment URL (in the Vercel dashboard: your project → **Domains** → copy the `*.vercel.app` address or custom domain).
 
-## Deployment
+## Live site
 
-Your project is live at:
+**Public URL:** `https://REPLACE_WITH_YOUR_PUBLIC_VERCEL_URL`
 
-**[https://vercel.com/swathi-gunnalas-projects/v0-swathi-product-portfolio](https://vercel.com/swathi-gunnalas-projects/v0-swathi-product-portfolio)**
+*(Update this line when you have the production URL.)*
 
-## Build your app
+## What this repo is for
 
-Continue building your app on:
+- **Recruiters and hiring managers:** a single place to see how I present my work and product thinking.  
+- **Continued iteration:** Next.js app; changes can be made locally or via v0 flows that sync to this repo, depending on your workflow.
+
+## Tech stack
+
+- **Framework:** Next.js (see `package.json` for exact version)  
+- **UI:** Radix-style components and patterns from the v0 scaffold  
+- **Hosting:** Vercel (connect this GitHub repo for automatic deploys)
+
+## Local development
+
+```bash
+git clone https://github.com/SwathiGunnala/swathig-product-portfolio.git
+cd swathig-product-portfolio
+npm install
+npm run dev
+```
+
+Open the local URL shown in the terminal (typically `http://localhost:3000`).
+
+## Build & production
+
+```bash
+npm run build
+npm start
+```
+
+## v0 project (optional)
+
+Continue or remix the design conversation on v0:
 
 **[https://v0.app/chat/uExQjgoIarZ](https://v0.app/chat/uExQjgoIarZ)**
 
-## How It Works
+## How syncing works (if you use v0)
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. Create or edit the project in [v0.app](https://v0.app).  
+2. Deploy from v0; connected deployments can push to this repository.  
+3. Vercel builds from the latest commit on the connected branch.
+
+---
+
+*This README prioritizes a clear **public portfolio URL** over internal dashboard links. The previous README pointed at the Vercel **project settings** page; visitors should land on your **live site** instead.*
